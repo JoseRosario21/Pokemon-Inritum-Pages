@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: Pokémon Inritum
+site_url: https://JoseRosario21.github.io/
+use_directory_urls: false
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - content.tabs.link
+    - content.code.copy
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Download: download/index.md
+  - Field Effects:
+      - Overview: fields/index.md
+      - Beach Field: fields/beach_field.md
+      - Urban Field: fields/urban_field.md
+      - Forest Field: fields/forest_field.md
+      - Cave Field: fields/cave_field.md
+      - Normalized Field: fields/normalized_field.md
+      - Dark Forest Field: fields/dark_forest_field.md
+  - Regional Variants:
+      - Overview: variants/index.md
+      - Ponyta: variants/ponyta.md
+      - Hoothoot: variants/hoothoot.md
+      - Noctowl: variants/noctowl.md
+
+extra_javascript:
+  - assets/js/music.js
